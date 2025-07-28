@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # 분석할 오디오 파일 경로 (예: video (1).wav 경로)
-audio_path = r"C:\Users\sophi\Desktop\archive\Coffee_room_01\Coffee_room_01\Videos\video (1).wav"
+audio_path = os.path.join(".", "Coffee_room_01", "Videos", "video (1).wav")
 
 # 오디오 파일 로딩
 y, sr = librosa.load(audio_path)
