@@ -17,6 +17,7 @@ def save_mel_spectrogram(audio_path, output_path):
 
 # 예시 실행
 save_mel_spectrogram(
-    r"C:\Users\sophi\Desktop\archive\Coffee_room_01\video (1).wav",
-    r"C:\Users\sophi\Desktop\output\fall_01.png"
+    os.path.join(".", "Coffee_room_01", "Videos", "video (1).wav"),
+    os.path.join(".", "output", "fall_01.png")
 )
+
