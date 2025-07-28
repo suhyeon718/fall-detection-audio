@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.optimizers import Adam
 
 # 이미지 경로 (output 폴더 안에 fall/not_fall 있음)
-train_dir = r"C:\Users\sophi\Desktop\output"  # 경로 수정하세요
+train_dir = os.path.join(".", "output")  # 상대경로로 수정
 img_size = (224, 224)
 batch_size = 16
 
