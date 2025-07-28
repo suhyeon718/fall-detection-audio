@@ -4,10 +4,10 @@ import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 경로 설정
-input_folder = r"C:\Users\sophi\Desktop\archive\Coffee_room_01\Coffee_room_01\Videos"  # .wav, .avi 위치
-label_folder = r"C:\Users\sophi\Desktop\archive\Coffee_room_01\Coffee_room_01\Annotation_files"  # .txt 라벨 위치
-output_folder = r"C:\Users\sophi\Desktop\output"  # fall, not_fall 폴더가 생성될 루트
+# 경로 설정 (상대경로 기반)
+input_folder = os.path.join(".", "Coffee_room_01", "Videos")  # .wav, .avi 위치
+label_folder = os.path.join(".", "Coffee_room_01", "Annotation_files")  # .txt 라벨 위치
+output_folder = os.path.join(".", "output")  # fall, not_fall 폴더가 생성될 루트
 
 # Mel spectrogram 저장 함수
 def save_mel_spectrogram(audio_path, save_path):
